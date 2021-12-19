@@ -18,10 +18,18 @@
     <link rel="stylesheet" href="../reset/vusal.css">
     <!-- basic scc -->
     <link rel="stylesheet" href="../css/jirono.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home Jirono</title>
 </head>
 
 <body>
+
+    <div id="first-loader">
+        <div class="loader">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+    </div>
 
     <header id="header">
         <div class="container">
@@ -37,7 +45,7 @@
                                 <li class="nav_list"><a class="nav_link" href="#">Home</a></li>
 
                                 <li class="nav_list">
-                                    <a class="nav_link" href="#">
+                                    <a class="nav_link co_co" href="#">
                                         Discover
                                         <i class="fas fa-chevron-down"></i>
                                     </a>
@@ -69,11 +77,12 @@
                                                 href="features_jirono.html">Features</a></li>
                                         <li class="nav_small_list"><a class="nav_small_link"
                                                 href="FAQ_jirono.html">FAQ's</a></li>
-                                        <li class="nav_small_list"><a class="nav_small_link" href="#">Blog</a></li>
+                                        <li class="nav_small_list"><a class="nav_small_link"
+                                                href="blog_jirono.html">Blog</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="nav_list"><a class="nav_link" href="#">Contact</a></li>
+                                <li class="nav_list"><a class="nav_link" href="contact_jirono.html">Contact</a></li>
                             </ul>
                         </div>
 
@@ -89,8 +98,60 @@
                         </ul>
 
                         <a class="nav_hamburger_menu" href="#">
-                            <span class="hamburger_menu"></span>
+                            <span class="line lineOne hamburger_menu"></span>
+                            <span class="line lineTwo hamburger_menu"></span>
+                            <span class="line lineThree hamburger_menu"></span>
                         </a>
+
+                        <div class="hamburger_nav_menu">
+                            <div class="nav_section_left d-flex align-items-center">
+
+                                <ul class="nav_menu d-flex align-items-center">
+                                    <li class="nav_list"><a class="nav_link" href="#">Home</a></li>
+
+                                    <li class="nav_list">
+                                        <a class="nav_link" href="#">
+                                            Discover
+                                            <i class="fas fa-chevron-up"></i>
+                                        </a>
+
+                                        <ul class="nav_small_menu">
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="#section-3">Features</a></li>
+                                            <li class="nav_small_list"><a class="nav_small_link" href="#section-6">Our
+                                                    Team</a></li>
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="#section-7">Pricing
+                                                    Plans</a>
+                                            </li>
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="#section-9">Latests
+                                                    Blogs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_list">
+                                        <a class="nav_link" href="#">
+                                            Pages
+                                            <i class="fas fa-chevron-up"></i>
+                                        </a>
+
+                                        <ul class="nav_small_menu">
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="aboutUs_jirono.html">About Us</a></li>
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="features_jirono.html">Features</a></li>
+                                            <li class="nav_small_list"><a class="nav_small_link"
+                                                    href="FAQ_jirono.html">FAQ's</a></li>
+                                            <li class="nav_small_list"><a class="nav_small_link" href="#">Blog</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_list"><a class="nav_link" href="contact_jirono.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -140,7 +201,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <a class="features_small_item" href="">
+                        <a class="features_small_item" data-aos="fade-up" data-aos-delay="500">
                             <div class="cloud_icon features_icon">
                                 <i class="fas fa-cloud"></i>
                             </div>
@@ -149,7 +210,7 @@
                         </a>
                     </div>
                     <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <a class="features_small_item" href="">
+                        <a class="features_small_item" data-aos="fade-up" data-aos-delay="600">
                             <div class="cloud_icon features_icon">
                                 <i class="fas fa-laptop"></i>
                             </div>
@@ -158,7 +219,7 @@
                         </a>
                     </div>
                     <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <a class="features_small_item" href="">
+                        <a class="features_small_item" data-aos="fade-up" data-aos-delay="700">
                             <div class="cloud_icon features_icon">
                                 <i class="fas fa-video"></i>
                             </div>
@@ -167,7 +228,7 @@
                         </a>
                     </div>
                     <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <a class="features_small_item" href="">
+                        <a class="features_small_item" data-aos="fade-up" data-aos-delay="800">
                             <div class="cloud_icon features_icon">
                                 <i class="fas fa-server"></i>
                             </div>
@@ -238,7 +299,7 @@
                         </div>
                     </div>
                     <div class="offset-xxl-1 col-xxl-5 col-lg-12 offset-md-0 offset-lg-0 align-self-center">
-                        <div class="section-3_right_sec">
+                        <div class="section-3_right_sec" data-aos="fade-right">
                             <img class="people_img" src="../svg/blue-1.png" alt="">
                         </div>
                     </div>
@@ -250,7 +311,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-5 col-lg-12 align-self-center">
-                        <div class="section-3_right_sec section-4_left_sec">
+                        <div class="section-3_right_sec section-4_left_sec" data-aos="fade-right">
                             <img class="people_img" src="../svg/blue-2.png" alt="">
                         </div>
                     </div>
@@ -374,7 +435,7 @@
 
                 <div class="row">
                     <div class="col-xxl-3 col-xl-6 col-md-12">
-                        <div class="team_item">
+                        <div class="team_item" data-aos="fade-up" data-aos-delay="500">
                             <div class="team_content text-center">
                                 <div class="team_info">
                                     <h3 class="user_name">Fletch Skinner</h3>
@@ -410,7 +471,7 @@
                     </div>
 
                     <div class="col-xxl-3 col-xl-6 col-md-12">
-                        <div class="team_item">
+                        <div class="team_item" data-aos="fade-up" data-aos-delay="600">
                             <div class="team_content text-center">
                                 <div class="team_info">
                                     <h3 class="user_name">Lance Bogrol</h3>
@@ -446,7 +507,7 @@
                     </div>
 
                     <div class="col-xxl-3 col-xl-6 col-md-12">
-                        <div class="team_item">
+                        <div class="team_item" data-aos="fade-up" data-aos-delay="700">
                             <div class="team_content text-center">
                                 <div class="team_info">
                                     <h3 class="user_name">Valentino Morose</h3>
@@ -481,7 +542,7 @@
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-6 col-md-12">
-                        <div class="team_item">
+                        <div class="team_item" data-aos="fade-up" data-aos-delay="800">
                             <div class="team_content text-center">
                                 <div class="team_info">
                                     <h3 class="user_name">Giles Posture</h3>
@@ -537,7 +598,7 @@
 
                 <div class="row">
                     <div class="col-xxl-4 col-xl-6 col-md-12">
-                        <div class="pricing_item">
+                        <div class="pricing_item" data-aos="fade-up" data-aos-delay="500">
                             <div class="pricing_header">
                                 <h3 class="pricing_title">BASIC PLAN</h3>
                             </div>
@@ -574,7 +635,7 @@
 
 
                     <div class="col-xxl-4 col-xl-6 col-md-12">
-                        <div class="pricing_item">
+                        <div class="pricing_item" data-aos="fade-up" data-aos-delay="600">
                             <div class="pricing_header bf">
                                 <h3 class="pricing_title text-white">ADVANCED PLAN</h3>
                             </div>
@@ -611,7 +672,7 @@
 
 
                     <div class="col-xxl-4 col-xl-6 col-md-12">
-                        <div class="pricing_item">
+                        <div class="pricing_item" data-aos="fade-up" data-aos-delay="700">
                             <div class="pricing_header">
                                 <h3 class="pricing_title">EXPERT PLAN</h3>
                             </div>
@@ -890,6 +951,14 @@
     <script src="../jquery/jquery.js"></script>
     <!-- javascript -->
     <script src="../js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
